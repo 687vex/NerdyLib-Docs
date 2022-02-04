@@ -89,7 +89,8 @@ Give this repo a ⭐️ if you found this project helpful!
 
 - [othneildrew's Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [PROS 3 Documentation](https://pros.cs.purdue.edu/v5/index.html)
-- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html
+- [GitHub Pages with Python Sphinx](https://www.docslikecode.com/articles/github-pages-python-sphinx/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/687vex/NerdyLib-Docs.svg?style=for-the-badge
