@@ -63,6 +63,13 @@ To get a local copy up and running follow these simple example steps.
     http://localhost:8000/
     ```
 
+## Structure
+
+- `docs/index.rst` - index file restructured text
+- `docs/*.md` - myST markdown files (new ones should be added to the `index.rst` table of contents)
+- `docs/conf.py` - site configuration (only modified when absolutely necessary)
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
