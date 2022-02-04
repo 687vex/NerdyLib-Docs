@@ -1,5 +1,9 @@
 # NerdyLib-Docs
 
+<!-- PROJECT LOGO -->
+[<img src="assets/img/687vex_logo.png" align="right" width="150">](https://github.com/687vex/NerdyLib-Docs)
+
+The official documentation for NerdyLib
 
 <!-- BUILT WITH -->
 ### Built With
@@ -9,6 +13,7 @@
   - furo
     - myst-parser
     - sphinx-favicon
+- Visual Studio Code
 
 # How to Use NerdyLib-Docs
 
