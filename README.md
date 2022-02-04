@@ -1,3 +1,9 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
 # NerdyLib-Docs
 
 <!-- PROJECT LOGO -->
@@ -56,3 +62,43 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     http://localhost:8000/
     ```
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are always welcome! Please create a Pull Request and include a description of how your Pull Request will improve the overall robot code and what it does.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+<!-- LICENSE -->
+## License
+
+This project is licensed under the [TBD]() License. See `LICENSE.txt` for more information.
+
+<!-- SUPPORT US -->
+## Support Us!
+
+Give this repo a ⭐️ if you found this project helpful!
+
+## Acknowledgments
+
+- [othneildrew's Best README Template](https://github.com/othneildrew/Best-README-Template)
+- [PROS 3 Documentation](https://pros.cs.purdue.edu/v5/index.html)
+- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/687vex/NerdyLib-Docs.svg?style=for-the-badge
+[contributors-url]: https://github.com/687vex/NerdyLib-Docs/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/687vex/NerdyLib-Docs.svg?style=for-the-badge
+[forks-url]: https://github.com/687vex/NerdyLib-Docs/network/members
+[stars-shield]: https://img.shields.io/github/stars/687vex/NerdyLib-Docs.svg?style=for-the-badge
+[stars-url]: https://github.com/687vex/NerdyLib-Docs/stargazers
+[issues-shield]: https://img.shields.io/github/issues/687vex/NerdyLib-Docs.svg?style=for-the-badge
+[issues-url]: https://github.com/687vex/NerdyLib-Docs/issues
+[license-shield]: https://img.shields.io/github/license/687vex/NerdyLib-Docs.svg?style=for-the-badge
+[license-url]: https://github.com/687vex/NerdyLib-Docs/blob/master/LICENSE.txt
