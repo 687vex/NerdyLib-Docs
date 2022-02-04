@@ -37,12 +37,9 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     git clone https://github.com/687vex/  NerdyLib-Docs.git
     ```
-2. Install Python packages
+2. Install project requirments (administrator permissions may be required)
     ```sh
-    pip install -U sphinx
-    pip install furo
-    pip install myst-parser
-    pip install sphinx-favicon
+    pip install -r requirements.txt
     ```
 ### Development Server
 
