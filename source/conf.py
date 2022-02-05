@@ -31,7 +31,7 @@ release = '2-30-2022'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-  'myst_parser', 'sphinx-favicon'
+  'sphinx.ext.githubpages', 'myst_parser', 'sphinx-favicon'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -55,9 +55,14 @@ html_theme = 'furo'
 html_show_sourcelink = False
 
 html_context = {
-  'default_description': 'Resources on DeepWater Exploration Documentation',
+  'default_description': 'NerdyLib Documentation',
 }
 
+
+# Add any paths that contain templates here, relative to this directory.
+# templates_path = ['_templates']
+
+# The suffix(es) of source filenames.
 source_suffix = ['.rst', '.md']
 
 html_css_files = [
