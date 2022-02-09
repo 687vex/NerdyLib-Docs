@@ -41,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/687vex/  NerdyLib-Docs.git
+    git clone https://github.com/687vex/NerdyLib-Docs.git
     ```
 2. Install project requirments (administrator permissions may be required)
     ```sh
