@@ -18,7 +18,8 @@ set -x
  
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme python3-stemmer python3-git python3-pip python3-virtualenv python3-setuptools
- 
+xargs apt-get install requirements.txt
+
 python3 -m pip install --upgrade rinohtype pygments
  
 #####################
