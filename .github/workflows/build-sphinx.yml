@@ -2,7 +2,7 @@ name: build-sphinx-to-gh-pages
 
 env:
   GITHUB_ACTOR: Kaweees
-  GITHUB_REPOSITORY: Kaweees/nerdylib-docs
+  GITHUB_REPOSITORY: 687vex/nerdylib-docs
   GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
 
 on: 
