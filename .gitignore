@@ -1,5 +1,3 @@
-build
-__pycache__
-*.pyc
-Poggie-doggies
-CONTRIBUTING.md
+.DS_Store
+build/
+.venv
