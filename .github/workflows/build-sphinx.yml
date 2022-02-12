@@ -1,8 +1,8 @@
 name: build-sphinx-to-gh-pages
 
 env:
-  GITHUB_ACTOR: ${{ github.GITHUB_ACTOR }}
-  GITHUB_REPOSITORY: $${{ github.GITHUB_REPOSITORY }}
+  GITHUB_ACTOR: Kaweees
+  GITHUB_REPOSITORY: 687vex/nerdylib-docs
   GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
 
 on: 
