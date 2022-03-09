@@ -18,7 +18,7 @@ NerdyLib: Documentation Home
   getting-started/nerdylib-installation
 
 .. meta::
-  :description: :description: NerdyLib Documentation Site 
+  :description: NerdyLib Documentation Site 
   :keywords: pros, vex-robotics, vex-v5
 
 Welcome to the NerdyLib Documentation!
