@@ -19,6 +19,7 @@ The official documentation for NerdyLib
   - furo
     - myst-parser
     - sphinx-favicon
+  - pipenv
 - Visual Studio Code
 
 # How to Use NerdyLib-Docs
