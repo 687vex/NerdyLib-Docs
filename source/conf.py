@@ -114,6 +114,8 @@ html_favicon = 'img/logo.svg'
 
 html_title = "NerdyLib Docs"
 
+html_baseurl = "https://docs.687vex.org"
+
 # html_logo = 'nerd_herd_2.svg'
 html_theme_options = {
   'dark_logo': '687_logo_dark.svg',
