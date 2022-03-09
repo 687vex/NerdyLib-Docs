@@ -44,9 +44,10 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     git clone https://github.com/687vex/NerdyLib-Docs.git
     ```
-2. Install project requirments (administrator permissions may be required)
+2. Install/update project requirments (administrator permissions may be required)
     ```sh
-    pip install -r requirements.txt
+    pipenv install
+    pipenv update
     ```
 ### Development Server
 
@@ -66,7 +67,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Structure
 
-- `docs/index.rst` - index file restructured text
+- `docs/index.rst` - index file (written in reStructuredText)
 - `docs/*.md` - myST markdown files (new ones should be added to the `index.rst` table of contents)
 - `docs/conf.py` - site configuration (only modified when absolutely necessary)
 
@@ -98,7 +99,7 @@ Give this repo a ⭐️ if you found this project helpful!
 - [othneildrew's Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [PROS 3 Documentation](https://pros.cs.purdue.edu/v5/index.html)
 - [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
-- [Pipenv Documentation](https://pipenv.pypa.io/en/latest/)
+- [Pipenv Documentation](https://realpython.com/pipenv-guide/)
 - [GitHub Pages with Python Sphinx](https://github.com/peaceiris/test-sphinx)
 - Documentation formatting heavily inspired by [DeepwaterExploration/DeepwaterExplorationDocs](https://github.com/DeepwaterExploration/DeepwaterExplorationDocs)
 
