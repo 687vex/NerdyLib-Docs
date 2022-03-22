@@ -10,6 +10,7 @@ livereload = "==2.6.3"
 myst-parser = "==0.16.1"
 sphinx-favicon = "==0.2"
 furo = "==2022.1.2"
+sphinxnotes-strike = "==1.0"
 
 [dev-packages]
 Sphinx = "*"
