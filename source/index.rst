@@ -11,9 +11,10 @@ NerdyLib: Documentation Home
 
 .. toctree::
   :hidden:
-  :maxdepth: 2
+  :maxdepth: 3
   :caption: Getting Started
 
+  getting-started/github-setup
   getting-started/pros-setup
   getting-started/nerdylib-installation
 
