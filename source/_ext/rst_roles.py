@@ -10,4 +10,7 @@ def strike_role(role, rawtext, text, lineno, inliner: Inliner, options={}, conte
   return nodes.inline(rawtext, text, **dict(classes=[your_css_strike_name])), []
 
 def setup(app: Sphinx):
+  """Install the plugin.
+  :param app: Sphinx application context.
+  """
   roles.register_canonical_role('my-strike', strike_role)  # usage:  :my-strike:`content ...`
