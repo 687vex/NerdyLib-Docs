@@ -48,6 +48,8 @@ templates_path = ['_templates']
 # source_suffix = ['.rst', '.md']
 source_suffix = ['.rst', '.md']
 
+pygments_style = 'monokai'
+
 # The master toctree document.
 master_doc = 'index'
 
@@ -109,7 +111,8 @@ html_context = {
 }
 
 html_css_files = [
-  'css/custom.css'
+  'css/custom.css',
+  'css/user.define.css'
 ]
 
 html_favicon = 'img/logo.svg'
