@@ -17,7 +17,7 @@ jobs:
           python-version: '3.9'
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pipenv
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
