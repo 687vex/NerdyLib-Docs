@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "Sphinx autobuild",
-      "command": "cd docs && sphinx-autobuild . build/html --host 0.0.0.0",
+      "command": "cd && sphinx-autobuild source build --host localhost",
       "type": "shell",
       "problemMatcher": [],
       "group": {
