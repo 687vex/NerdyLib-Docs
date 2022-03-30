@@ -11,23 +11,21 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
 import os, sys
+from datetime import datetime
 
 sys.path.append(os.path.abspath('_ext'))
 # sys.path.insert(0, os.path.abspath('.'))
 
-
-
 # -- Project information -----------------------------------------------------
 
 project = 'NerdyLib'
-copyright = '2022, VEX 687: The Nerd Herd'
+copyright = f'{datetime.now().year}, VEX 687: The Nerd Herd'
 author = 'Miguel Villa Floran'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
 release = '1.0'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -36,7 +34,7 @@ release = '1.0'
 # ones.
 
 extensions = [
-  'sphinx.ext.githubpages', 'myst_parser', 'rst_roles'
+  'sphinx.ext.githubpages', 'myst_parser', 'rst_roles', 'sphinxnotes.strike'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
