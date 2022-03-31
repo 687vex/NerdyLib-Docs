@@ -34,7 +34,7 @@ release = '1.0'
 # ones.
 
 extensions = [
-  'sphinx.ext.githubpages', 'myst_parser', 'rst_roles', 'sphinxnotes.strike'
+  'sphinx.ext.githubpages', 'myst_parser', 'rst_roles' #, 'sphinxnotes.strike'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -42,11 +42,7 @@ templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-#
-# source_suffix = ['.rst', '.md']
 source_suffix = ['.rst', '.md']
-
-pygments_style = 'monokai'
 
 # The master toctree document.
 master_doc = 'index'
@@ -64,7 +60,7 @@ language = None
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'monokai'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -76,8 +72,21 @@ html_theme = 'furo'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
-# html_theme_options = {}
+html_theme_options = {
+  'dark_logo': '687_logo_dark.svg',
+  'light_logo': '687_logo_light_1.svg',
+  'navigation_with_keys': True,
+  'footer_icons': [
+    {
+      'name': 'GitHub',
+      'url': 'https://github.com/687vex/NerdyLib-Docs',
+      'html': '',
+      "class": 'fa-solid fa-github fa-2x'
+    }
+  ]
+}
+
+# html_logo = 'nerd_herd_2.svg'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -100,7 +109,6 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'pydoc'
 
-
 # Disable showing the sourcelink option for each page
 html_show_sourcelink = False
 
@@ -110,20 +118,19 @@ html_context = {
 
 html_css_files = [
   'css/custom.css',
-  'css/user.define.css'
+  'css/user.define.css',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css',
 ]
 
 html_favicon = 'img/logo.svg'
-
 html_title = "NerdyLib Docs"
-
 html_baseurl = "https://docs.687vex.org"
 
-# html_logo = 'nerd_herd_2.svg'
-html_theme_options = {
-  'dark_logo': '687_logo_dark.svg',
-  'light_logo': '687_logo_light_1.svg'
-}
+html_show_sphinx = True
+highlight_language = "cpp"
+nitpicky = True
 
 language = "en"
 myst_html_meta = {
