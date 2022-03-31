@@ -130,10 +130,7 @@ html_context = {
 
 html_css_files = [
   'css/custom.css',
-  'css/user.define.css',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css',
+  'css/user.define.css'
 ]
 
 html_favicon = 'img/logo.svg'
