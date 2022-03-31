@@ -87,7 +87,7 @@ html_theme_options = {
       'name': 'Globe',
       'url': 'https://687vex.org/',
       'html': '',
-      "class": 'fa-thin fa-globe fa-2x'
+      "class": 'fa-solid fa-globe fa-2x'
     }
   ]
 }
