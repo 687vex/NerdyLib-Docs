@@ -21,7 +21,9 @@
   git version 2.7.4
   ```
 
-- Install the latest version of [GitHub Desktop](https://desktop.github.com/) best suited for your machine.
+- Install the latest version of [GitHub Desktop](https://desktop.github.com/) best suited for your machine. Make sure to sign into GitHub Desktop with your GitHub account.
 
 ## Additional Reading
-- [Long Video Git/Github with diagrams](https://www.youtube.com/watch?v=DVRQoVRzMIY)
+- [Learn the GitHub web interface](https://guides.github.com/activities/hello-world)
+- [Learn Git](https://try.github.io)
+- [Long Video about Git/Github with diagrams](https://www.youtube.com/watch?v=DVRQoVRzMIY)
