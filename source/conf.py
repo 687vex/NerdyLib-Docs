@@ -81,7 +81,7 @@ html_theme_options = {
       'name': 'GitHub',
       'url': 'https://github.com/687vex/NerdyLib-Docs',
       'html': '',
-      "class": 'fa-solid fa-github fa-2x'
+      "class": 'fa-brands fa-github fa-2x'
     }
   ]
 }
