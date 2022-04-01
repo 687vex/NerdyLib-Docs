@@ -26,11 +26,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m pip install --upgrade pip pipenv
-          pipenv sync --dev
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
       - name: sphinx-build
-        run: pipenv run make html
+        run: make html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
