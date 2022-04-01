@@ -35,7 +35,7 @@ release = '1.0'
 
 extensions = [
   # Sphinx's own extensions
-  'sphinx.ext.githubpages'
+  'sphinx.ext.githubpages',
   # External stuff
   'myst_parser',
   # Custom extension
@@ -75,6 +75,7 @@ html_theme = 'furo'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
+  'announcement': '<em>Important</em> announcement!',
   'dark_logo': '687_logo_dark.svg',
   'light_logo': '687_logo_light_1.svg',
   'navigation_with_keys': True,
