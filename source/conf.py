@@ -34,7 +34,12 @@ release = '1.0'
 # ones.
 
 extensions = [
-  'sphinx.ext.githubpages', 'myst_parser', 'rst_roles' #, 'sphinxnotes.strike'
+  # Sphinx's own extensions
+  'sphinx.ext.githubpages'
+  # External stuff
+  'myst_parser',
+  # Custom extension
+  'rst_roles' #, 'sphinxnotes.strike'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -58,9 +63,6 @@ language = None
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'monokai'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -97,6 +99,10 @@ html_theme_options = {
     }
   ]
 }
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = "sphinx"
+pygments_dark_style = "monokai"
 
 # html_logo = 'nerd_herd_2.svg'
 
