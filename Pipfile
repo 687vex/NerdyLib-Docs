@@ -14,7 +14,6 @@ furo = "==2022.3.4"
 sphinxnotes-strike = "==1.0"
 pycodestyle = "==2.8.0"
 
-
 [dev-packages]
 
 [requires]
