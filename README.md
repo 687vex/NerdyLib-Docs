@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Working Python 3 >= 3.9.0 installation
+- Working Python 3 >= 3.10.4 installation
   - [pip](https://appuals.com/fix-pip-is-not-recognized-as-an-internal-or-external-command/) is working
 
 - Visual Studio Code
@@ -44,7 +44,15 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     git clone https://github.com/687vex/NerdyLib-Docs.git
     ```
-2. Install/update project requirments (administrator permissions may be required)
+2. Upgrade pip
+    ```sh
+    pip install --upgrade pip
+    ```
+3. Install pipenv via pip
+    ```sh
+    pip install pipenv
+    ```
+4. Install/update project requirments (administrator permissions may be required)
     ```sh
     pipenv install
     pipenv update
