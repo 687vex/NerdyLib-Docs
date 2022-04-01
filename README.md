@@ -48,14 +48,9 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     pip install --upgrade pip
     ```
-3. Install pipenv via pip
+3. Install/update project requirments (administrator permissions may be required)
     ```sh
-    pip install pipenv
-    ```
-4. Install/update project requirments (administrator permissions may be required)
-    ```sh
-    pipenv install
-    pipenv update
+    pip install -r requirements.txt
     ```
 ### Development Server
 
