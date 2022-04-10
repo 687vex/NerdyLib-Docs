@@ -5,10 +5,10 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <meta content="NerdyLib Documentation Site" name="description" />
 <meta content="pros, vex-robotics, vex-v5" name="keywords" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="PROS 3 Setup" href="pros-setup.html" /><link rel="prev" title="NerdyLib: Documentation Home" href="../index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="NerdyLib Installation" href="../getting-started/nerdylib-installation.html" />
 
     <link rel="shortcut icon" href="../_static/logo.svg"/><meta name="generator" content="sphinx-4.5.0, furo 2022.03.04"/>
-        <title>Git/GitHub Setup - NerdyLib Docs</title>
+        <title>Levels of Autonomus - NerdyLib Docs</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=935aa2abcc5c1da4283d1dc201fb1f0add16d23a" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=25ceb02ed1c46dc30f2321ff83e92799f69dfdb9" />
@@ -165,14 +165,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../index.html">NerdyLib: Documentation Home</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Git/GitHub Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pros-setup.html">PROS 3 Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nerdylib-installation.html">NerdyLib Installation</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/github-setup.html">Git/GitHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/pros-setup.html">PROS 3 Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/nerdylib-installation.html">NerdyLib Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Other</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../other/autonomus-levels.html">Levels of Autonomus</a></li>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Levels of Autonomus</a></li>
 </ul>
 
 </div>
@@ -205,51 +205,18 @@
           </label>
         </div>
         <article role="main">
-          <section id="git-github-setup">
-<h1>Git/GitHub Setup<a class="headerlink" href="#git-github-setup" title="Permalink to this headline">#</a></h1>
-<section id="understanding-version-control-git-github">
-<h2>Understanding Version Control, Git, &amp; GitHub<a class="headerlink" href="#understanding-version-control-git-github" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>If Version Control is a concept, then Git and GitHub are the real-life tools used to implement that concept. Git is the powerful, behind-the-scenes software that makes version control possible. GitHub is a user-friendly interface and code repository that is built on Git’s software.</p>
-<ul>
-<li><p>To learn more about the high-level concepts of Git and GitHub, read through the <a class="reference external" href="https://guides.github.com/introduction/git-handbook/">Git Handbook</a> and <a class="reference external" href="https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049#d5e9c2b6379246a593c1ef74051e7e3c">Introduction to Git</a>.</p></li>
-</ul>
-</li>
-<li><p>Git is not the only version control software available, but it is one of the most popular. For the curious, other version control software includes:</p>
-<ul>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Subversion">Apache Subversion (SVN)</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Mercurial">Mercurial</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_version-control_software">and many more</a></p></li>
-</ul>
-</li>
-</ul>
+          <section id="levels-of-autonomus">
+<h1>Levels of Autonomus<a class="headerlink" href="#levels-of-autonomus" title="Permalink to this headline">#</a></h1>
+<p>The majority of autonomus programs in VEX can be placed into three categories.</p>
+<section id="motor-control">
+<h2>Motor Control<a class="headerlink" href="#motor-control" title="Permalink to this headline">#</a></h2>
+<p>The first tier of autonomy consists of controlling the robot’s motors via a PID loop or Motion Profiling. <a class="reference external" href="https://www.vexrobotics.com/276-4840.html">V5 Smart Motors</a> includes a built-in PID with pre-tuned PID values. However, since these values have never been released, is it impossible to figure out a good starting point and/or the scale the default values are based on. Creating a PID loop that changes the voltage of the motors (such as through <a class="reference external" href="https://pros.cs.purdue.edu/v5/api/cpp/motors.html?highlight=move#move">move()</a>) as an output is reccomended.</p>
 </section>
-<section id="github-setup">
-<h2>GitHub Setup<a class="headerlink" href="#github-setup" title="Permalink to this headline">#</a></h2>
-<ul>
-<li><p>We will be using Git for Version Control. Our robot’s software will be hosted as a Git Repository on the Git hosting platform <a class="reference external" href="https://github.com/">GitHub</a>.</p></li>
-<li><p>Read through <a class="reference external" href="https://www.notion.so/zarkom/Introduction-to-GitHub-202af6f64bbd4299b15f238dcd09d2a7">Introduction to GitHub</a> which will help you create a GitHub account.</p></li>
-<li><p>To use GitHub a GitHub account is required and to work on a team’s robot code repository permission to make changes to the repos.</p>
-<ol class="arabic simple">
-<li><p>Create a GitHub account on the <a class="reference external" href="https://github.com/">GitHub website</a>.</p></li>
-<li><p>Talk to your team’s Programming Lead to be added to the <a class="reference external" href="https://github.com/687vex/">VEX 687 GitHub organization</a>. The software of every team’s robot code can be found in the organization.</p></li>
-</ol>
-</li>
-<li><p>Install the latest version of <a class="reference external" href="https://git-scm.com/downloads">Git</a> suited for your machine. If the installation was successful, running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code> on the command line should produce a similar output as below.</p>
-<div class="highlight-git notranslate"><div class="highlight"><pre><span></span>git version 2.7.4
-</pre></div>
-</div>
-</li>
-<li><p>Install the latest version of <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a> best suited for your machine. Make sure to sign into GitHub Desktop with your GitHub account.</p></li>
-</ul>
+<section id="odometry">
+<h2>Odometry<a class="headerlink" href="#odometry" title="Permalink to this headline">#</a></h2>
 </section>
-<section id="additional-reading">
-<h2>Additional Reading<a class="headerlink" href="#additional-reading" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://guides.github.com/activities/hello-world">Learn the GitHub web interface</a></p></li>
-<li><p><a class="reference external" href="https://try.github.io">Learn Git</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=DVRQoVRzMIY">Long Video about Git/Github with diagrams</a></p></li>
-</ul>
+<section id="path-follower">
+<h2>Path Follower<a class="headerlink" href="#path-follower" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
@@ -258,23 +225,15 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="pros-setup.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">PROS 3 Setup</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="../index.html">
+          
+          <a class="prev-page" href="../getting-started/nerdylib-installation.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">NerdyLib Installation</div>
                 
               </div>
             </a>
@@ -318,10 +277,10 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Git/GitHub Setup</a><ul>
-<li><a class="reference internal" href="#understanding-version-control-git-github">Understanding Version Control, Git, &amp; GitHub</a></li>
-<li><a class="reference internal" href="#github-setup">GitHub Setup</a></li>
-<li><a class="reference internal" href="#additional-reading">Additional Reading</a></li>
+<li><a class="reference internal" href="#">Levels of Autonomus</a><ul>
+<li><a class="reference internal" href="#motor-control">Motor Control</a></li>
+<li><a class="reference internal" href="#odometry">Odometry</a></li>
+<li><a class="reference internal" href="#path-follower">Path Follower</a></li>
 </ul>
 </li>
 </ul>
