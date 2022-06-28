@@ -10,7 +10,7 @@ sphinx-autobuild = "==2021.3.14"
 livereload = "==2.6.3"
 myst-parser = "==0.18.0"
 sphinx-favicon = "==0.2"
-furo = "==2022.4.7"
+furo = "==2022.6.21"
 sphinxnotes-strike = "==1.1"
 pycodestyle = "==2.8.0"
 
