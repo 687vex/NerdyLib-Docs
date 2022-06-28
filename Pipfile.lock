@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b3bd585446286de83b9592e8189b6626e671a7ceb0c6df5a7e178c2439500751"
+            "sha256": "741a5608d78d326efa8d7c5782999af8d4750254d3330d99ae2452fc41c68067"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -97,11 +97,11 @@
         },
         "jinja2": {
             "hashes": [
-                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
-                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+                "sha256:077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8",
+                "sha256:611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==3.1.2"
+            "markers": "python_version >= '3.6'",
+            "version": "==3.0.3"
         },
         "livereload": {
             "hashes": [
@@ -331,11 +331,11 @@
         },
         "sphinx-tabs": {
             "hashes": [
-                "sha256:73209aa769246501f6de9e33051cfd2d54f5900e0cc28a63367d8e4af4c0db5d",
-                "sha256:d10dd7fb2700329b8e5948ab9f8e3ef54fff30f79d2e42cfd1b0089ae26e8c5e"
+                "sha256:31dbe7594b5ef4cfa76a7960448d4607dca167ff21467000213920572c302072",
+                "sha256:75e97ce10b74700deaf87b662539a293c8afc9dfa9d21f126b860118064cb0c5"
             ],
             "index": "pypi",
-            "version": "==3.3.1"
+            "version": "==3.4.0"
         },
         "sphinxcontrib-applehelp": {
             "hashes": [
