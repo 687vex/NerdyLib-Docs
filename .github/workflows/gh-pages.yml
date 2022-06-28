@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
@@ -16,25 +16,46 @@ jobs:
         with:
           python-version: '3.10'
 
+      # pip caching
+      - name: Locate pip's cache
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
+
       - name: Cache dependencies
         uses: actions/cache@v3
         with:
-          path: ~/.cache/pipenv
-          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-pipenv-
+            ${{ runner.os }}-pip-
 
+      # Install runtime dependencies
+      - name: Upgrade pip
+        run: pip install --upgrade pip
       - name: Install dependencies
-        run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install -r requirements.txt
-
-      - name: sphinx-build
+        run: pip install -r requirements.txt
+        
+      # Build sphinx source files
+      - name: Build sphinx files
         run: make html
-
-      - name: Deploy
+        
+      # Publish build files
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'pull_request')
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/html
+      
+      # Upload for introspection, useful for pull requests and debugging
+      - uses: actions/upload-artifact@v2
+        with:
+          name: generated-site
+          path: public/
