@@ -55,7 +55,7 @@ jobs:
           publish_dir: ./build/html
       
       # Upload for introspection, useful for pull requests and debugging
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: generated-site
           path: public/
