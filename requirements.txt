@@ -4,7 +4,7 @@ sphinx-autobuild==2021.3.14
 livereload==2.6.3
 myst-parser==0.17.0
 sphinx-favicon==0.2
-furo==2022.3.4
+furo==2022.6.21
 sphinxnotes-strike==1.0
 pycodestyle==2.8.0
 attrs==21.4.0
